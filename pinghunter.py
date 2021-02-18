@@ -6,9 +6,8 @@ from rich.console import Console
 from rich.table import Table
 
 nr = InitNornir(config_file='config.yaml')
-
 with open('reader.txt', 'r') as f:
-    filelines = f.readlines()
+    filelines = f.read().splitlines()
 with open('reader.txt', 'r') as f:
     COUNT = 0
     for line in f:
